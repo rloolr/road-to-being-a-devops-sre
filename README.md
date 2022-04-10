@@ -2,79 +2,90 @@
 
 ## Objetivos deste documento
 
-A ideia desta página é descrever de forma **básica** ferramentas e conceitos para que seja possível atuar como DevOps / SRE hoje no mercado de TI.
+A ideia desta página é descrever de forma **básica** ferramentas e conceitos para ser possível atuar como DevOps / SRE hoje no mercado de TI.
 
-Todo o conteudo que coloco aqui foram ferramentas, cursos, livros que estudei até hoje e o que vejo ser usado nas maioria das Empresas. Existem muito mais ferramentas no mercado, mas as que menciono aqui já trará uma boa estrutura para boas oportunidades.
+Todo o conteúdo que coloco aqui foram ferramentas, cursos, livros que estudei até hoje e o que vejo ser usado nas maiorias das Empresas. Existem muito mais ferramentas no mercado, mas as que menciono aqui já trará uma boa estrutura para boas oportunidades.
 
-Para ter uma ideia de qual nivel de conhecimento é necessário para participar de uma oportunidade de DevOps / SRE tenha em mente algo do tipo:
+Para ter uma ideia de qual nível de conhecimento é necessário para participar de uma oportunidade de DevOps / SRE tenha em mente algo do tipo:
 
-- **Vaga Júnior:** Ter domínio de 20% de tudo que está listado abaixo
-- **Vaga Pleno:** Ter domínio de 40% de tudo que está listado abaixo
-- **Vaga Senior:** Ter domínio de 60% de tudo que está listado abaixo
-- **Vaga Especialista / Consultor:** Ter domínio de 80% de tudo que está listado abaixo
+### Nível Júnior
+
+Para uma oportunidade de **Júnior** ou mesmo **Pleno nível I**, entendo que tentar possuir o máximo de conhecimento indicado como **ideal** na tabela de classificação do **Bloco 1** informado abaixo lhe dará ampla vantagem ao nível de conhecimento técnico que é geralmente solicitado nas descrições das vagas e também será a sua principal base para todos os outros níveis.
+
+| Etapa | Domínio |
+| --------  | -------- |
+| Bloco 1 - Etapa 1 | - Min: Domínio total de 50% dos itens mencionados </p> - Ideal: Domínio total de 80% dos itens mencionados |
+| Bloco 1 - Etapa 2 | - Min: Domínio total de 30% dos itens mencionados </p> - Ideal: Domínio total de 60% dos itens mencionados |
+| Bloco 1 - Etapa 3 | - **Nginx** Min: Domínio total de 50% de conhecimento na ferramenta </p> - **Nginx** Ideal: Domínio total de 80% de conhecimento na ferramenta </p> --- </p> - **Apache** Min: Domínio total de 30% de conhecimento na ferramenta </p> - **Apache** Ideal: Domínio total de 50% de conhecimento na ferramenta |
+| Bloco 1 - Etapa 4 | - **AWS** Min: Curso AWS Practitioner </p> - **AWS** Ideal: Certificação AWS Practitioner </p> --- </p> - **Azure** Min: Curso AZ-900 </p> - **Azure** Ideal: Certificação AZ-900 </p> |
+| Bloco 1 - Etapa 5 | - Min: Domínio Mínimo de 50% da ferramenta </p> - Ideal: Domínio Mínimo de 80% da ferramenta |
+| Bloco 1 - Etapa 6 | - Min: Domínio total de 50% dos itens mencionados </p> - Ideal: Domínio total de 80% dos itens mencionados |
 
 ## Caminhos de desenvolvimento
 
-### Etapa 1 - Operating Systems & Linux Basics
+### Bloco 1 - Etapa 1: Operating Systems & Linux Basics
 
 - Comandos básicos de Shell
 - Dominar ao máximo a ferramenta vi / vim
-- Ferramentas para manipular textos (awk, sed, grep, egrep, fgrep, sort, uniq, cat, cut, echo, fmt, tr, nl, wc)
+- Ferramentas para manipular textos (awk, sed, grep, egrep, fgrep, sort, uniq, cat, cut, echo, fmt, tr, nl, wc, Less, more, tac)
 - Ferramentas para monitoramento de processos (ps, top, htop, atop, lsof)
-- Ferramentas para thsoot de redes (nmap, tcpdump, ping, mtr, traceroute, dig, airmon, airodump, dig, iptables, netstat)
+- Ferramentas para thsoot de redes (nmap, tcpdump, ping, mtr, traceroute, dig, airmon, airodump, iptables, netstat)
 - Ferramentas para analise de performance de sistemas (nmon, iostat, sar, vmstat)
-- Outras ferramentas (strace, dtrace, systemtap, uname, df)
+- Outras ferramentas (find, tar, gz, zip, unzip, bz2, strace, dtrace, systemtap, uname, df)
 - Criar e Entender Linux File System
 - SSH Key Management
 
-> **Recomendação para estudos básicos:** [Linux Essentials](https://www.lpi.org/our-certifications/linux-essentials-overview)
+> **Recomendação para estudos:** Overview do conteúdo [Linux Essentials](https://www.lpi.org/our-certifications/linux-essentials-overview) e Curso [Linux Essetials](https://www.udemy.com/course/lpi-linux-essentials/) e de [Shell Script](https://www.udemy.com/course/shell-script-do-basico-ao-profissional/)
 
-### Etapa 2 - Networking & Security
+### Bloco 1 - Etapa 2: Networking & Security
 
 - Configurações básicas de firewalls
 - Conhecimento sobre Camada OSI
-- Entender sobre IP addresses, CIDRs subnets, ports e DNS
+- Entender sobre IP addresses, CIDRs subnets, portas, protocolos e DNS
 - Load Balancers
 - Proxy Server
+- Proxy Reversos
 - HTTP/HTTPS
 - SSL e TLS
 - Port Forwarding
 
-### Etapa 3 - WebServers
+### Bloco 1 - Etapa 3: WebServers
 
 - Nginx
 - Apache
 - IIS
 
-> **Dica:** Focar em configuração de SSL TLS para cada WebServer acima, pois hoje tudo tem que ter certificado nem que seja Let's Encrypt. Dar foco em configurar e tshoots em certificados.
+> **Dica:** Focar em configuração de SSL TLS para cada WebServer acima, pois hoje tudo tem que ter certificado nem que seja Let's Encrypt. Tente dominar instalações, configurações e alguns tshoots da ferramenta e de certificados.
 
-### Etapa 4 - Public Cloud Provider
+### Bloco 1 - Etapa 4: Public Cloud Provider
 
 - AWS
 - Azure
 - GCP
 
-> **Obs.:** Escolha como principal AWS e Azure e aprenda ao máximo, e tenha conhecimento suficiente na segunda opção como backup
+> **Obs.:** Escolha como principal AWS ou Azure e aprenda ao máximo, e tenha conhecimento suficiente na segunda opção como backup técnico.
 
-### Etapa 5 - Ferramenta para controle de versão
+### Bloco 1 - Etapa 5: Ferramenta para controle de versão
 
 - GIT
 
-> **Obs.:** O seu nível de conhecimento nesta ferramenta deverá ser de no mínimo 70%, pois ela será a sua ferramenta principal para versionar tudo o que for código para as próximas etapas.
+> **Obs.:** O seu nível de conhecimento nesta ferramenta deverá ser de no mínimo 50%, pois ela será a sua ferramenta principal para versionar tudo o que for código para as próximas etapas.
 
 **Materiais de apoio:**
 
 - [Pro Git (English Edition)](https://www.amazon.com.br/gp/product/B01ISNIKES)
 - [Ry's Git Tutorial (English Edition)](https://www.amazon.com.br/gp/product/B00QFIA5OC)
 
-### Etapa 6 - Linguagens para estruturar Dados e informações
+> **Dica:** Após ter conhecimentos sólidos em Git, tente estudar sobre Git Flow.
+
+### Bloco 1 - Etapa 6: Linguagens para estruturar Dados e informações
 
 - Yaml
 - Json
 - XML
 - Markdown
 
-> **Obs.:** Focar no aprendizado de Yaml e Json para trabalhar com a maior quantidade de arquivos de configurações, XML para alguns cenários e Markdown para criações e sustentações de documentações
+> **Obs.:** Focar no aprendizado de Yaml e Json para trabalhar com a maior quantidade de arquivos de configurações, XML para alguns cenários que ainda utilizam e entender bastante sobre Markdown para criações e sustentações de documentações.
 
 ### Etapa 7 - IaC e Gerência de Configurações
 
